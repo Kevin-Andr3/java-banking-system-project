@@ -33,18 +33,7 @@ Un sistema de escritorio para la gestión bancaria y transaccional desarrollado 
 * **Interfaz de Usuario Interactiva:** Diseñada con **Java Swing** para ofrecer una experiencia limpia, organizada y funcional.
 
 ## 📊 Estructura del Proyecto
-├── assets/             # Capturas de pantalla e imágenes del sistema
-├── src/
-│   ├── conexion/       
-│   │   └── ConexiónMySQL.java  # Clase de conexión a la base de datos (MySQL)
-│   │   └── bd_banco.sql # Script de creación y población de la base de datos .sql
-│   ├── imagen/         # Imgenes .jpg usadas en el proyecto (logo y avatar)
-│   ├── librería/       # archivo `.jar` para la conexión JDBC
-│   ├── modelo/         # Entidades del sistema (Cuenta, Cliente, Transacción, etc.)
-│   ├── repositorio     # Repositorios para las entidades (Cliente, Cuenta, Empleado, etc.)
-│   └── vista/          # Interfaces gráficas desarrolladas en Swing
-└── README.md           # Documentación del proyecto 
-
+<img src="assets/Estructura.JPG" alt="Estructura" width="100%"/>
 
 ## 🛠️ Requisitos del Sistema
 
@@ -67,7 +56,8 @@ Para poder ejecutar o modificar este proyecto en tu entorno local, asegúrate de
   - Selecciona la carpeta raíz del proyecto clonado y haz clic en Finish.
 4. Configurar las credenciales de conexión:
   - Abre la clase de conexión a la base de datos (ubicada en el paquete conexion).
-  - Actualiza el usuario (root) y contraseña (data49) con las credenciales de tu MySQL local en la línea: ¨connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bd_banco","root","data49");¨.
+  - Actualiza el usuario (root) y contraseña (data49) con las credenciales de tu MySQL local en la línea:
+    <img src="assets/ConexionMySQL.JPG" alt="Credenciales de conexion" width="100%"/>
   - Nota: Debes abrir el archivo "bd_banco.sql" en tu MySQL.
 5. Ejecutar:
   - Haz clic derecho sobre la clase principal con el método main y selecciona Run As ➡️ Java Application.
